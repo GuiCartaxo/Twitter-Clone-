@@ -6,7 +6,7 @@
 		header('Location: index.php?erro=1');
 	}
 
-	require_once('db.class.php');
+	require_once('../connection/db.class.php');
 
 	$id_usuario = $_SESSION['id_usuario'];
 	$seguir_id_usuario = $_POST['seguir_id_usuario'];

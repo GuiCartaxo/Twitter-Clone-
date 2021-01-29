@@ -2,7 +2,7 @@
 
 	session_start();
 
-	require_once('db.class.php');
+	require_once('../connection/db.class.php');
 
 	$usuario = $_POST['usuario'];
 	$senha = md5($_POST['senha']);
@@ -31,9 +31,4 @@
 	} else {
 		echo 'Erro na execução da consulta, favor entrar em contato com o admin do site';
 	}
-
-
-	
-
-
 ?>

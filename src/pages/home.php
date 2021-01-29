@@ -6,7 +6,7 @@
 		header('Location: index.php?erro=1');
 	}
 
-	require_once('db.class.php');
+	require_once('../connection/db.class.php');
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
@@ -34,23 +34,6 @@
 	} else {
 		echo 'Erro ao executar a query';
 	}
-
-	//--id dos tweets
-	/*$sql = " SELECT id_tweet FROM tweet WHERE id_tweet";
-	$resultado_id = mysqli_query($link, $sql);
-	if($resultado_id){
-		//$registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC);
-		$rows = array();
-		while($row = mysqli_fetch_array($resultado_id)) {
-    		$rows[] = $row;
-		}
-
-		print_r($rows);
-		die();
-		//$qtde_seguidores = $registro['qtde_seguidores'];
-	} else {
-		echo 'Erro ao executar a query';
-	}*/
 
 ?>
 
@@ -165,7 +148,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <img src="imagens/icone_twitter.png" />
+	          <img src="../imagens/icone_twitter.png" alt="twitter icon"/>
 	        </div>
 	        
 	        <div id="navbar" class="navbar-collapse collapse">

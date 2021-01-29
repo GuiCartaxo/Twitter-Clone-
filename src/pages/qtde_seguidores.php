@@ -6,7 +6,7 @@
 		header('Location: index.php?erro=1');
 	}
 
-	require_once('db.class.php');
+	require_once('../connection/db.class.php');
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();

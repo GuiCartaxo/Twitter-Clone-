@@ -1,6 +1,6 @@
 <?php
 
-	require_once('db.class.php');
+	require_once('../connection/db.class.php');
 
 	$usuario = $_POST['usuario'];
 	$email = $_POST['email'];
